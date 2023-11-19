@@ -51,8 +51,8 @@ public class UserSalaryController : ControllerBase
     {
       string sql = @"
       UPDATE TutorialAppSchema.UserSalary
-              SET [Salary] = '" + userSalary.Salary + @"'
-          WHERE UserId = " + userSalary.UserId;
+              SET [Salary] = " + userSalary.Salary +
+          "WHERE UserId = " + userSalary.UserId;
 
           Console.WriteLine(sql);
 
